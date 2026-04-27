@@ -1,0 +1,10 @@
+{
+  "appRuntime": {
+    "strategy": "docker",
+    "composeFile": "docker-compose.yml",
+    "service": "vote",
+    "port": 8080,
+    "readyPath": "/",
+    "openPath": "/"
+  }
+}
