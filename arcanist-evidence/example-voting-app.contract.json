@@ -1,0 +1,29 @@
+{
+  "cwd": "/workspace/repo",
+  "kind": "web",
+  "runner": "docker",
+  "entry": {
+    "type": "compose",
+    "files": [
+      "docker-compose.yml"
+    ],
+    "service": "vote",
+    "profiles": []
+  },
+  "url": {
+    "hostPort": 3000,
+    "path": "/"
+  },
+  "portMapping": {
+    "containerPort": 80
+  },
+  "ready": {
+    "path": "/",
+    "timeoutSeconds": 420
+  },
+  "open": {
+    "path": "/"
+  },
+  "composeEnv": {},
+  "env": {}
+}
